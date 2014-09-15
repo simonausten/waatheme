@@ -1,0 +1,224 @@
+/*
+HTML5 Reset :: style.css
+----------------------------------------------------------
+We have learned much from/been inspired by/taken code where offered from:
+
+Eric Meyer                    :: http://meyerweb.com
+HTML5 Doctor                :: http://html5doctor.com
+and the HTML5 Boilerplate    :: http://html5boilerplate.com
+
+-------------------------------------------------------------------------------
+Let's default this puppy out
+-------------------------------------------------------------------------------*/
+HTML, BODY, BODY DIV, SPAN, OBJECT, IFRAME, H1, H2, H3, H4, H5, H6, P, BLOCKQUOTE, PRE, ABBR, ADDRESS, CITE, CODE, DEL, DFN, EM, IMG, INS, KBD, Q, SAMP, SMALL, STRONG, SUB, SUP, VAR, B, I, DL, DT, DD, OL, UL, LI, FIELDSET, FORM, LABEL, LEGEND, TABLE, CAPTION, TBODY, TFOOT, THEAD, TR, TH, TD, ARTICLE, ASIDE, FIGURE, FOOTER, HEADER, MENU, NAV, SECTION, TIME, MARK, AUDIO, VIDEO, DETAILS, SUMMARY
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-weight: normal;
+	vertical-align: baseline;
+	background: transparent;
+}
+ARTICLE, ASIDE, FIGURE, FOOTER, HEADER, NAV, SECTION, DETAILS, SUMMARY
+{
+	display: block;
+}
+/*Handle box-sizing while better addressing child elements:
+http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/*/
+HTML
+{
+	box-sizing: border-box;
+}
+*, *:before, *:after
+{
+	box-sizing: inherit;
+}
+/*consider resetting the default cursor: https://gist.github.com/murtaugh/5247154
+Responsive images and other embedded objects
+Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+If this default setting for images is causing issues, you might want to replace it with a .responsive class instead.*/
+IMG, OBJECT, EMBED
+{
+	max-width: 100%;
+}
+/*force a vertical scrollbar to prevent a jumpy page*/
+HTML
+{
+	overflow-y: scroll;
+}
+/*we use a lot of ULs that aren't bulleted.
+don't forget to restore the bullets within content.*/
+UL
+{
+	list-style: none;
+}
+BLOCKQUOTE, Q
+{
+	quotes: none;
+}
+BLOCKQUOTE:before, BLOCKQUOTE:after, Q:before, Q:after
+{
+	content: '';
+	content: none;
+}
+A
+{
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+/*And not a lot of A:hovers with an underline*/
+A:hover
+{
+	text-decoration: none;
+}
+DEL
+{
+	text-decoration: line-through;
+}
+ABBR[title], DFN[title]
+{
+	border-bottom: 1px dotted #000;
+	cursor: help;
+}
+/*tables still need cellspacing="0" in the markup*/
+TABLE
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+TH
+{
+	font-weight: bold;
+	vertical-align: bottom;
+}
+TD
+{
+	font-weight: normal;
+	vertical-align: top;
+}
+HR
+{
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #CCC;
+	margin: 1em 0;
+	padding: 0;
+}
+INPUT, SELECT
+{
+	vertical-align: middle;
+}
+PRE
+{
+	white-space: pre;
+	/*CSS2*/
+	white-space: pre-wrap;
+	/*CSS 2.1*/
+	white-space: pre-line;
+	/*CSS 3 (and 2.1 as well, actually)*/
+	word-wrap: break-word;
+	/*IE*/
+}
+INPUT[type="radio"]
+{
+	vertical-align: text-bottom;
+}
+INPUT[type="checkbox"]
+{
+	vertical-align: bottom;
+}
+.ie7 INPUT[type="checkbox"]
+{
+	vertical-align: baseline;
+}
+.ie6 INPUT
+{
+	vertical-align: text-bottom;
+}
+SELECT, INPUT, TEXTAREA
+{
+	font: 99% sans-serif;
+}
+TABLE
+{
+	font-size: inherit;
+	font: 100% sans-serif;
+}
+SMALL
+{
+	font-size: 85%;
+}
+STRONG
+{
+	font-weight: bold;
+}
+TD, TD IMG
+{
+	vertical-align: top;
+}
+/*Make sure sup and sub don't mess with your line-heights http://gist.github.com/413930*/
+SUB, SUP
+{
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+}
+SUP
+{
+	top: -0.5em;
+}
+SUB
+{
+	bottom: -0.25em;
+}
+/*standardize any monospaced elements*/
+PRE, CODE, KBD, SAMP
+{
+	font-family: monospace, sans-serif;
+}
+/*hand cursor on clickable elements*/
+.clickable, LABEL, INPUT[type=button], INPUT[type=submit], INPUT[type=file], BUTTON
+{
+	cursor: pointer;
+}
+/*Webkit browsers add a 2px margin outside the chrome of form elements*/
+BUTTON, INPUT, SELECT, TEXTAREA
+{
+	margin: 0;
+}
+/*make buttons play nice in IE*/
+BUTTON, INPUT[type=button]
+{
+	width: auto;
+	overflow: visible;
+}
+/*scale images in IE7 more attractively*/
+.ie7 IMG
+{
+	-ms-interpolation-mode: bicubic;
+}
+/*prevent BG image flicker upon hover
+(commented out as usage is rare, and the filter syntax messes with some pre-processors)
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+
+let's clear some floats*/
+.clearfix:before, .clearfix:after
+{
+	content: "\0020";
+	display: block;
+	height: 0;
+	overflow: hidden;
+}
+.clearfix:after
+{
+	clear: both;
+}
+.clearfix
+{
+	zoom: 1;
+}

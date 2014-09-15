@@ -1,0 +1,77 @@
+/*
+Theme Name: The HTML5 Reset Theme*/
+.chromeframe
+{
+	position: absolute;
+	top: 0;
+}
+/*A Linux- and Windows-friendly sans-serif font stack: http://prospects.mhurrell.co.uk/post/updating-the-helvetica-font-stack*/
+BODY
+{
+	font: 13px Helmet, Freesans, sans-serif;
+}
+/*Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301)*/
+::-moz-selection
+{
+	background: #FCD700;
+	color: #FFF;
+	text-shadow: none;
+}
+::selection
+{
+	background: #FCD700;
+	color: #FFF;
+	text-shadow: none;
+}
+/*j.mp/webkit-tap-highlight-color*/
+A:link
+{
+	-webkit-tap-highlight-color: #FCD700;
+}
+INS
+{
+	background-color: #FCD700;
+	color: #000;
+	text-decoration: none;
+}
+MARK
+{
+	background-color: #FCD700;
+	color: #000;
+	font-style: italic;
+	font-weight: bold;
+}
+/*Mozilla doesn't style place holders by default*/
+INPUT:-moz-placeholder
+{
+	color: #A9A9A9;
+}
+TEXTAREA:-moz-placeholder
+{
+	color: #A9A9A9;
+}
+/*Dev Tools*/
+.devtool
+{
+	z-index: 100000;
+}
+#ruler
+{
+	position: fixed;
+	top: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #FFFFFF;
+	font-size: 9px;
+	padding: 3px;
+}
+#template-name
+{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #FFFFFF;
+	font-size: 9px;
+	padding: 3px;
+}
